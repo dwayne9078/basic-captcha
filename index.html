@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onload="generateCaptchaText()">
+    <div class="container">
+      <div class="container-captcha">
+        <div class="captcha-text">
+          <!-- <span id="captcha">uAw3G2R</span> -->
+          <span id="captcha"></span>
+          <div id="reset-div">
+            <input type="button" value="🔃" onclick="generateCaptchaText()" />
+          </div>
+        </div>
+        <input type="text" maxlength="7" id="res" />
+        <input
+          type="submit"
+          disabled
+          id="btn"
+          value="Aceptar"
+          onclick="verifyCaptcha()"
+        />
+      </div>
+    </div>
+  </body>
+</html>
+<script src="script.js"></script>
